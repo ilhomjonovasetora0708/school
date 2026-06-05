@@ -231,3 +231,62 @@ function revealSections() {
     });
 
 }
+window.addEventListener(
+    "scroll",
+    revealSections
+);
+
+revealSections();
+
+// =============================
+// COUNTER ANIMATION
+// =============================
+const counters =
+    document.querySelectorAll(".about-card h3");
+
+let started = false;
+
+function startCounters() {
+
+    if (started) return;
+
+    counters.forEach(counter => {
+
+        const target =
+            parseInt(
+                counter.innerText
+                    .replace("+", "")
+            );
+
+        let count = 0;
+
+        function updateCounter() {
+
+            count += Math.ceil(
+                target / 50
+            );
+            if (count < target) {
+
+                counter.innerText =
+                    count + "+";
+
+                setTimeout(
+                    updateCounter,
+                    30
+                );
+
+            } else {
+
+                counter.innerText =
+                    target + "+";
+
+            }
+
+        }
+
+        updateCounter();
+
+    });
+
+    started = true;
+}
