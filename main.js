@@ -208,3 +208,26 @@ sections.forEach(section => {
         "all .8s ease";
 
 });
+function revealSections() {
+
+    sections.forEach(section => {
+
+        const top =
+            section.getBoundingClientRect().top;
+
+        const screenHeight =
+            window.innerHeight;
+
+        if (top < screenHeight - 100) {
+
+            section.style.opacity =
+                "1";
+
+            section.style.transform =
+                "translateY(0)";
+
+        }
+
+    });
+
+}
