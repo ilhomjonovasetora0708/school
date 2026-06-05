@@ -30,3 +30,21 @@ themeBtn.addEventListener("click", () => {
 
     }
 });
+// =============================
+// ADMISSION BUTTON
+// =============================
+
+const admissionBtn =
+    document.querySelector(".admission-btn");
+
+if (admissionBtn) {
+
+    admissionBtn.addEventListener("click", () => {
+
+        alert(
+            "🎓 Admission application submitted successfully!"
+        );
+
+    });
+
+}
