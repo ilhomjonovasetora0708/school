@@ -66,3 +66,18 @@ if (primaryBtn) {
     });
 
 }
+const secondaryBtn =
+    document.querySelector(".secondary-btn");
+
+if (secondaryBtn) {
+
+    secondaryBtn.addEventListener("click", () => {
+
+        document.querySelector(".about")
+            .scrollIntoView({
+                behavior: "smooth"
+            });
+
+    });
+
+}
