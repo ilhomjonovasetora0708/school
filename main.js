@@ -81,3 +81,44 @@ if (secondaryBtn) {
     });
 
 }
+// =============================
+// SUBJECT CARDS
+// =============================
+
+const subjectCards =
+    document.querySelectorAll(".subject-card");
+
+subjectCards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.background =
+            "#2563eb";
+
+        card.style.color =
+            "#ffffff";
+
+        const icon =
+            card.querySelector("i");
+
+        icon.style.color =
+            "#ffffff";
+
+  });
+    card.addEventListener("mouseleave", () => {
+
+        card.style.background =
+            "#ffffff";
+
+        card.style.color =
+            "#1f2937";
+
+        const icon =
+            card.querySelector("i");
+
+        icon.style.color =
+            "#2563eb";
+
+    });
+
+});
