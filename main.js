@@ -122,3 +122,33 @@ subjectCards.forEach(card => {
     });
 
 });
+// =============================
+// TEACHER CARDS
+// =============================
+
+const teacherCards =
+    document.querySelectorAll(".teacher-card");
+
+teacherCards.forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.transform =
+            "translateY(-12px)";
+
+        card.style.boxShadow =
+            "0 15px 30px rgba(37,99,235,.25)";
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform =
+            "translateY(0)";
+
+        card.style.boxShadow =
+            "0 5px 20px rgba(0,0,0,.08)";
+
+    });
+
+});
