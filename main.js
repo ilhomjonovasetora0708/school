@@ -192,3 +192,19 @@ logo.addEventListener("click", () => {
     });
 
 });
+// =============================
+// SCROLL REVEAL
+// =============================
+
+const sections =
+    document.querySelectorAll("section");
+
+sections.forEach(section => {
+
+    section.style.opacity = "0";
+    section.style.transform =
+        "translateY(60px)";
+    section.style.transition =
+        "all .8s ease";
+
+});
