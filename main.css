@@ -293,3 +293,26 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+@media(max-width:768px) {
+
+    .menu {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .subject-grid,
+    .teacher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+}
