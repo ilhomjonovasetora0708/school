@@ -48,3 +48,21 @@ if (admissionBtn) {
     });
 
 }
+// =============================
+// HERO BUTTONS
+// =============================
+
+const primaryBtn =
+    document.querySelector(".primary-btn");
+
+if (primaryBtn) {
+
+    primaryBtn.addEventListener("click", () => {
+
+        alert(
+            "Welcome to EduSchool 🚀"
+        );
+
+    });
+
+}
