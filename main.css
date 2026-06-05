@@ -277,3 +277,19 @@ header {
 }
 
 /* RESPONSIVE */
+@media(max-width:992px) {
+
+    .hero-content,
+    .about-content {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    .subject-grid,
+    .teacher-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
