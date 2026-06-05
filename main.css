@@ -50,3 +50,24 @@ header {
 .logo i {
     margin-right: 10px;
 }
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
