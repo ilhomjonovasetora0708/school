@@ -263,3 +263,17 @@ header {
 .teacher-card:hover {
     transform: translateY(-10px);
 }
+.teacher-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.teacher-card p {
+    color: #2563eb;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
