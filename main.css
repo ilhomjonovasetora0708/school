@@ -24,3 +24,29 @@ body {
 }
 
 /* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .08);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.logo i {
+    margin-right: 10px;
+}
