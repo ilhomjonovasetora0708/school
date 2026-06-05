@@ -88,3 +88,26 @@ header {
     border-radius: 10px;
     cursor: pointer;
 }
+/* HERO */
+
+.hero {
+    padding: 170px 0 100px;
+    background: linear-gradient(to right,
+            #dbeafe,
+            #ffffff);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text span {
+    color: #2563eb;
+    font-weight: 600;
+}
