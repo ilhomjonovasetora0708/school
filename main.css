@@ -215,3 +215,27 @@ header {
     padding: 120px 0;
     background: #f8fafc;
 }
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.subject-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-10px);
+}
+
+.subject-card i {
+    font-size: 45px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
