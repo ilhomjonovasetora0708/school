@@ -239,3 +239,27 @@ header {
     color: #2563eb;
     margin-bottom: 15px;
 }
+/* TEACHERS */
+
+.teachers {
+    padding: 120px 0;
+}
+
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.teacher-card {
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px);
+}
