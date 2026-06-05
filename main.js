@@ -290,3 +290,26 @@ function startCounters() {
 
     started = true;
 }
+window.addEventListener("scroll", () => {
+
+    const about =
+        document.querySelector(".about");
+
+    const top =
+        about.getBoundingClientRect().top;
+
+    if (top < window.innerHeight - 100) {
+
+        startCounters();
+
+    }
+
+});
+
+// =============================
+// PAGE LOADED
+// =============================
+
+console.log(
+    "🎓 EduSchool Website Loaded Successfully"
+);
